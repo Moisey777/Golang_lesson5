@@ -1,0 +1,45 @@
+/*
+Операция "равно". Возвращает true, если оба операнда равны, и false, если они не равны:
+*/
+package main
+import "fmt"
+ 
+func main() {
+    var a int = 8
+    var b int = 3
+    var c bool = a == b
+    fmt.Println(c)      // false
+}
+
+//Операция "больше чем". Возвращает true, если первый операнд больше второго, и false, если первый операнд меньше второго:
+
+var a int = 8
+var b int = 3
+var c bool = a > b   // true
+
+//Операция "меньше чем". Возвращает true, если первый операнд меньше второго, и false, если первый операнд больше второго:
+
+var a int = 8
+var b int = 3
+var c bool = a < b   // false
+
+//Операция "не равно". Возвращает true, если первый операнд не равен второму, и false, если оба операнда равны:
+
+var a int = 8
+var b int = 3
+var c bool = a != b // true
+var d bool = a != 8 // false
+
+//Логические операции
+//Инвертирует значение. Если операнд равен true, то возвращает false, иначе возвращает true.
+var a bool = true
+var b bool = !a     //false
+var c bool = !b     // true
+
+var b bool = 4 > 5 && 6 > 8       //false
+var c bool = 3 <= 5 && 10 > 8 // true
+
+var b bool = 4 > 5 || 6 > 8       //false
+var c bool = 3 == 5 || 10 > 8    // true
+
+
